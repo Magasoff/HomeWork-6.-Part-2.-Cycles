@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+        // Задание 1.
         System.out.println("Задание 1");
         int deposit = 15_000;
         int gol = 2_459_000;
@@ -14,6 +15,7 @@ public class Main {
             month++;
             System.out.println("Месяц " + month + " сумма накоплений равна " + total + " рублей");
         }
+        //Задание 2.
         System.out.print("Задание 2");
         for (int a = 10; a > 0; a--) {
             System.out.print(a + ",");
@@ -23,6 +25,7 @@ public class Main {
             System.out.print(c + ",");
             c--;
         }
+        //Задание 3.
         System.out.println("Задание 3");
         int y = 12_000_000;
         int born = 17;
@@ -32,6 +35,7 @@ public class Main {
             y += y * people / 1000;
             System.out.println(" За " + year + " лет, население стало " + y + " человек ");
         }
+        //Задание 4.
         System.out.println("Задание 4");
         int friday = 3; // пятница 3е число месяца
         int f = 31;      // число дней в месяце
@@ -39,6 +43,7 @@ public class Main {
             friday = friday + 7;
             System.out.println("Сегодня пятница, " + p + " -е число. Необходимо подготовить отчет.");
         }
+        //Задание 5.
         System.out.println("Задание 5");
         int goal = 12_000_000;
         int countMonth = 0;
@@ -49,37 +54,43 @@ public class Main {
             if (countMonth % 6 == 0) {
                 System.out.println("За " + countMonth + " месяцев накопил " + saving + " рублей ");
             }
-            System.out.println("Задание 6");
-            int oneFirstGoal = 12_000_000;
-            int oneCountMonth = 1;
-            double doubleOnePercent = 0.07;
-            int firstSaving = 15000;
-            for (; oneCountMonth <= 9 * 12; countMonth++) {
-                firstSaving += firstSaving * doubleOnePercent;
-                if (oneCountMonth % 6 == 0) {
-                    System.out.println("За " + oneCountMonth + " месяцев накопил " + firstSaving + " рублей ");
-                }
-                System.out.println(" Задание 7");
-                int firstYear = 0;
-                int year = 0;
-                int nowYear = 2022;
-                int startYear = nowYear - 200;
-                int finishYear = nowYear + 100;
-                int period = 79;
-                while (year < finishYear) {
-                    if (year > startYear) {
-                        System.out.println(year);
-                    }
-                    year += period;
-                }
+        }
+        //Задание 6.
+        System.out.println("Задание 6");
+        int oneFirstGoal = 12_000_000;
+        int oneCountMonth = 1;
+        double doubleOnePercent = 0.07;
+        int firstSaving = 15000;
+        for (; oneCountMonth <= 9 * 12; oneCountMonth++) {
+            firstSaving += firstSaving * doubleOnePercent;
+            if (oneCountMonth % 6 == 0) {
+                System.out.println("За " + oneCountMonth + " месяцев накопил " + firstSaving + " рублей ");
             }
-            int n = 2;
-            for (int i = 1; i <= 10; i++) {
-                System.out.println(n + " * " + i + " = " + n * i);
+        }
+        //Задание 7.
+        System.out.println(" Задание 7");
+        int firstYear = 0;
+        int year = 0;
+        int nowYear = 2022;
+        int startYear = nowYear - 200;
+        int finishYear = nowYear + 100;
+        int period = 79;
+        while (year < finishYear) {
+            if (year > startYear) {
+                System.out.println(year);
             }
+            year += period;
+        }
+        //Задание 8.
+        System.out.println("Задание 8");
+        int n = 2;
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(n + " * " + i + " = " + n * i);
         }
     }
 }
+
+
 
 
 
